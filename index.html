@@ -20,7 +20,7 @@ Brief Description of Goal of Code:
 This code is meant to create an app that tells users whether they are most likely experiencing a cold or seasonal allergies based on symptoms.
  
 Known Issues:
-blah, blah, blah, blah
+None as of now.
 
 https://www.w3schools.com/w3css/default.asp
 https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-file
@@ -38,18 +38,20 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 <script>
         var allergy_count = 0;
         var cold_count = 0;
-
-
-        function allergyAdd(){
+	function allergyAdd(){
             allergy_count = allergy_count + 1;
 		alert(allergy_count);
 
         }
-
         function coldAdd(){
             cold_count = cold_count + 1;
         }
-
+	function percentage(){
+		allergypercentage = (allergy_count/4)*100
+		coldpercentage = (cold_count/4)*100
+	var results = document.getElementbyId("results")
+		results.innerHTML = "Chance of Allergies =" + allergypercentage + "%" + "<br> Chance of Cold =" + coldpercentage + "%"
+	}
   </script>
 
 
