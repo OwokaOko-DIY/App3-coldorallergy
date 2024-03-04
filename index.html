@@ -41,7 +41,6 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	function allergyAdd(){
             allergy_count = allergy_count + 1;
 		alert(allergy_count);
-
         }
         function coldAdd(){
             cold_count = cold_count + 1;
@@ -49,7 +48,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	function percentage(){
 		allergypercentage = (allergy_count/4)*100
 		coldpercentage = (cold_count/4)*100
-	var results = document.getElementbyId("results")
+	var results = document.getElementById("results")
 		results.innerHTML = "Chance of Allergies =" + allergypercentage + "%" + "<br> Chance of Cold =" + coldpercentage + "%"
 	}
   </script>
